@@ -1,3 +1,4 @@
+enablePlugins(JavaAppPackaging)
 name := "Renty"
 
 version := "0.1"
@@ -11,7 +12,6 @@ val akka = "2.5.11"
 val circe = "0.9.3"
 
 libraryDependencies ++= Seq(
-  "com.typesafe.sbt" % "sbt-native-packager" % "1.3.12",
   "com.typesafe.akka" %% "akka-http" % akkaHttp,
   "com.typesafe.akka" %% "akka-stream" % akka,
   "com.typesafe.akka" %% "akka-slf4j" % akka,
