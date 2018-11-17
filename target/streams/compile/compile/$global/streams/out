@@ -1,7 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/jamon/IdeaProjects/Renty/src/main/scala/controllers/CarController.scala:27:37: akka.http.javadsl.model.ws.Message.type does not take parameters[0m
-[0m[[0m[31merror[0m] [0m[0m            complete(Marshal(Message(e.getMessage)).to[ResponseEntity].map { e => HttpResponse(entity = e, status = StatusCodes.InternalServerError) })[0m
-[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/jamon/IdeaProjects/Renty/src/main/scala/controllers/CarController.scala:34:37: akka.http.javadsl.model.ws.Message.type does not take parameters[0m
-[0m[[0m[31merror[0m] [0m[0m            complete(Marshal(Message(e.getMessage)).to[ResponseEntity].map { e => HttpResponse(entity = e, status = StatusCodes.InternalServerError) })[0m
-[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/jamon/IdeaProjects/Renty/src/main/scala/models/Rental.scala:8:12: FindByIdRequest is already defined as case class FindByIdRequest[0m
+[0m[[0m[31merror[0m] [0m[0mcase class FindByIdRequest(id: String) {[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

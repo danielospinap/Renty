@@ -15,6 +15,7 @@ case class Car(_id: ObjectId,
                price: String,
                carType: String,
                model: String,
+               rental: Rental,
                plate: String,
                rating: Int,
                capacity: Int,
@@ -63,6 +64,7 @@ object Car {
       "price" -> myCar.price.asJson,
       "type" -> myCar.carType.asJson,
       "model" -> myCar.model.asJson,
+      "rental" -> myCar.rental.asJson,
       "plate" -> myCar.plate.asJson,
       "rating" -> myCar.rating.asJson,
       "capacity" -> myCar.capacity.asJson,
@@ -81,6 +83,7 @@ object Car {
       price <- c.downField("price").as[String]
       carType <- c.downField("type").as[String]
       model <- c.downField("model").as[String]
+      rental <- c.downField("rental").as[Rental]
       plate <- c.downField("plate").as[String]
       rating <- c.downField("rating").as[Int]
       capacity <- c.downField("capacity").as[Int]
@@ -95,6 +98,7 @@ object Car {
                 price,
                 carType,
                 model,
+                rental,
                 plate,
                 rating,
                 capacity,
